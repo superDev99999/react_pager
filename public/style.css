@@ -1,0 +1,90 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.main-container {
+  padding-top: 2em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 800px;
+  margin: auto;
+}
+
+.employee-table {
+  table-layout: fixed;
+  width: 100%;
+  border-collapse: collapse;
+  border: lavender 3px solid;
+}
+
+.employee-table tbody {
+  display: block;
+  height: 400px;
+  overflow: auto;
+}
+
+.employee-table thead tr {
+  display: block;
+  background-color: lavender;
+}
+
+.employee-table td,
+th {
+  text-align: left;
+  padding: 0.25em;
+}
+
+.employee-table td:nth-child(1),
+th:nth-child(1),
+td:nth-child(2),
+th:nth-child(2) {
+  min-width: 125px;
+}
+
+.employee-table td:nth-child(3),
+th:nth-child(3) {
+  min-width: 300px;
+}
+
+.employee-table td:nth-child(4),
+th:nth-child(4) {
+  width: 250px;
+}
+
+.employee-table tbody tr:nth-child(even) {
+  background-color: lightgray;
+}
+
+.page-nav {
+  margin-top: 20px;
+  min-width: 50%;
+  display: flex;
+  flex-direction: row;
+  border: 3px lavender solid;
+  border-radius: 1em;
+  padding: 0 0.5em;
+  justify-content: space-evenly;
+}
+
+.page-nav a {
+  text-decoration: none;
+  border-radius: 50%;
+  color: black;
+  height: 2em;
+  width: 2em;
+  line-height: 2em;
+  text-align: center;
+}
+
+.active-page-link {
+  background-color: lavender;
+}
+a:hover:not(.active-page-link) {
+  background-color: gainsboro;
+}
+a {
+  transition: background-color 0.3s;
+}
