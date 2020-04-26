@@ -2,7 +2,7 @@ const webpack = require('webpack');
 const path = require('path');
 
 const config = {
-  mode: 'production',
+  mode: 'development',
   entry: './src/index.js',
   output: {
     path: path.resolve(__dirname, 'dist'),
